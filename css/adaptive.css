@@ -1,0 +1,574 @@
+@media screen and (max-width: 1280px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .circle {
+        width: 550px;
+        height: 550px;
+        animation: pulse 3s infinite;
+    }
+
+    .circle2 {
+        width: 550px;
+        height: 550px;
+        animation: pulse2 3s infinite;
+    }
+
+    .macaroon-menu .container {
+        display: grid;
+        grid-template-areas:
+        "title title title title"
+        ". item1 item2 ."
+        ". item3 item4 .";
+        grid-column-gap: 29px;
+        justify-content: center;
+    }
+
+    .info .container {
+        grid-column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .big-strawberry {
+        left: -15px;
+        top: 40px;
+        position: absolute;
+        animation: moveUpDown 2s infinite;
+    }
+
+    .small-strawberry {
+        position: absolute;
+        right: 170px;
+        bottom: 75px;
+        animation: moveUpDown 2s 1s infinite;
+    }
+
+    .form-main {
+        margin: 0 150px 0 40px;
+    }
+
+
+    .big-strawberry {
+        left: 0;
+        top: 80px;
+    }
+
+    .present {
+        right: 10px;
+        bottom: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 1048px) {
+    .circle {
+        width: 400px;
+        height: 400px;
+        animation: pulse 3s infinite;
+    }
+
+    .circle2 {
+        width: 400px;
+        height: 400px;
+        animation: pulse2 3s infinite;
+    }
+
+    .info .container {
+        grid-template-areas:
+        "title title image image"
+        "text text image image"
+        " . ad_item1 . ad_item2"
+        " . ad_item3 . ad_item4";
+        grid-template-columns: 20% 30% 10% 40%;
+        grid-template-rows: auto auto 1fr 1fr;
+    }
+
+    .info-image {
+        grid-area: image;
+        align-self: center;
+        min-width: 0;
+        margin: 0 auto;
+        padding-left: 40px;
+    }
+
+    .info-image img {
+        width: 75%;
+    }
+
+    .small-strawberry {
+        right: 50px;
+        bottom: 75px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .circle {
+        width: 350px;
+        height: 350px;
+        animation: pulse 3s infinite;
+    }
+
+    .circle2 {
+        width: 350px;
+        height: 350px;
+        animation: pulse2 3s infinite;
+    }
+
+
+    .form-main {
+        margin: 0;
+    }
+
+    /*.small-strawberry {*/
+    /*    left: 375px;*/
+    /*    bottom: 75px;*/
+    /*}*/
+}
+
+@media screen and (max-width: 768px) {
+    .phone {
+        visibility: hidden;
+    }
+
+    .menu {
+        margin-left: 20px;
+    }
+
+    .main {
+        padding: 70px 0 62px 0;
+    }
+
+    .main .container {
+        display: grid;
+        grid-template-areas:
+                "main_title main_title"
+                "main_text main_text"
+                "main_btn main_image"
+                ". main_image";
+        position: relative;
+        grid-template-columns: 20% 80%;
+    }
+
+    .circle {
+        width: 500px;
+        height: 500px;
+        animation: pulse 3s infinite;
+    }
+
+    .circle2 {
+        width: 500px;
+        height: 500px;
+        animation: pulse2 3s infinite;
+    }
+
+
+    .main-title {
+        grid-area: main_title;
+        order: 1;
+        max-width: 580px;
+        margin-bottom: 74px;
+    }
+
+    .main-description {
+        grid-area: main_text;
+        order: 2;
+        max-width: 348px;
+    }
+
+    .main-button {
+        grid-area: main_btn;
+        order: 3;
+    }
+
+    .main-image-animated {
+        order: 4;
+        grid-area: main_image;
+        max-width: 500px;
+        max-height: 500px;
+        margin-right: 55px;
+    }
+
+    .info .container {
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "info-text info-text"
+        "image image"
+        "ad_item1 ad_item2"
+        "ad_item3 ad_item4";
+        grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+        grid-column-gap: 54px;
+        grid-row-gap: 40px;
+        justify-content: center;
+    }
+
+    .info-text {
+        grid-area: info-text;
+        max-width: 670px; /* Максимальная ширина */
+        justify-self: center; /* Центрирование по горизонтали */
+        width: 100%; /* Занимает всю доступную ширину */
+        padding: 0; /* Убираем padding */
+        margin: 0; /* Убираем margin */
+        box-sizing: border-box; /* Учитываем padding и border в ширине */
+        text-align: center;
+    }
+
+    .info-title {
+        text-align: center;
+        grid-area: title;
+        justify-self: center
+    }
+
+    .info-image {
+        grid-area: image;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .info-image img {
+        max-width: 60%;
+    }
+
+    .advantage {
+        max-width: 220px;
+    }
+
+    .advantage:nth-of-type(4), .advantage:nth-of-type(6) {
+        justify-self: end;
+    }
+
+    .advantage-number {
+        justify-self: center;
+    }
+
+    .advantage-number svg {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .advantage-description {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .form-main {
+        order: 1;
+    }
+
+    .form-main-title {
+        max-width: 406px;
+    }
+
+    .form-image {
+        order: 2;
+        margin: 0 0 -80px 0;
+        padding: 0;
+        align-self: end;
+    }
+
+    .big-strawberry {
+        bottom: 0;
+        right: 0;
+    }
+
+    .small-strawberry {
+        right: 108px;
+        top: 180px;
+    }
+
+    .big-strawberry {
+        left: 375px;
+        top: 300px;
+    }
+
+    .present {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .menu {
+        display: none;
+    }
+
+    .header .container {
+        position: relative;
+    }
+
+    .menu.open {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu .close {
+        display:block;
+        width: 24px;
+        height: 24px;
+        fill: rgb(255, 255, 255);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: #000000c9;
+        z-index: 2000;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: Gilroy-Medium, sans-serif;
+        color: #ffefef;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom, 0.3s;
+    }
+
+    .menu-item a:hover {
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    .menu-item {
+        margin: 15px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger svg {
+        width: 40px;
+        height: 22px;
+        fill: #821328;
+    }
+
+    .main .container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 338px;
+        padding: 0;
+    }
+
+    .main-title {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 40px;
+        max-width: 338px;
+    }
+
+    .main-description {
+        font-size: 16px;
+        line-height: 1.438;
+        margin-bottom: 40px;
+    }
+
+    .main-image-animated {
+        max-width: 250px;
+        margin-right: 0;
+    }
+
+    .info {
+        padding: 100px 0;
+    }
+
+    .info .container {
+        max-width: 335px;
+        grid-row-gap: 40px;
+        grid-column-gap: 15px;
+    }
+
+    .info-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .info-text {
+        font-size: 16px;
+        line-height: 1.437;
+    }
+
+    .info-image img {
+        width: 302px;
+        max-width: 100%;
+    }
+
+    .info-image {
+        padding: 0;
+    }
+
+    .advantage {
+        width: 165px;
+    }
+
+    .adv-des-title {
+        font-size: 18px;
+    }
+
+    .adv-des-text {
+        margin-top: 20px;
+        font-size: 13px;
+        line-height: 1.385;
+    }
+
+    .macaroon-menu {
+        background: #eba8b1;
+        padding: 100px 0;
+    }
+
+    .macaroon-menu .container {
+        display: grid;
+        grid-template-areas:
+        "title"
+        "item1"
+        "item2"
+        "item3"
+        "item4";
+        justify-content: center;
+        max-width: 336px;
+    }
+
+    .macaroon-menu-item {
+        justify-self: center;
+    }
+
+    .macaroon-menu-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .form .container {
+        justify-content: center;
+    }
+
+    .form-main-title {
+        font-size: 30px;
+    }
+
+    .form-main-des {
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+
+    .form-image {
+        display: none;
+    }
+
+    .form-input input {
+        width: 341px;
+        outline: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+        font-family: GilroyBold, sans-serif;
+        color: rgb(94, 10, 27);
+    }
+
+    .circle {
+        width: 300px;
+        height: 300px;
+        animation: pulse 3s infinite;
+    }
+
+    .circle2 {
+        width: 300px;
+        height: 300px;
+        animation: pulse2 3s infinite;
+    }
+
+    .big-strawberry {
+        top: 130px;
+        left: 280px;
+    }
+
+    .small-strawberry {
+        display: none;
+    }
+
+    .footer .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .footer .logo {
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    .footer .phone {
+        visibility: visible;
+        order: 2;
+        margin-bottom: 40px;
+    }
+
+    .media {
+        order: 3;
+        margin-bottom: 40px;
+    }
+
+    .rights {
+        position: absolute;
+        margin-top: 0;
+        bottom: 0;
+        left: calc(50% - 75px);
+    }
+
+    .media img {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 374px){
+    .info-text {
+        font-size: 16px;
+        line-height: 1.437;
+        max-width: 320px;
+    }
+
+    .advantage {
+        width: 150px;
+    }
+
+    .info .container {
+        max-width: 335px;
+        grid-row-gap: 40px;
+        grid-column-gap: 5px;
+    }
+
+    .big-strawberry {
+        top: 120px;
+        left: 230px;
+    }
+
+    .form-input input {
+        width: 320px;
+    }
+}
+
+
